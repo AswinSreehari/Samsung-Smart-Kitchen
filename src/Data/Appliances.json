@@ -1,0 +1,94 @@
+{
+    "appliances": [
+        {
+            "title": "BeSpoke Appliances",
+            "subtitle": "AI integrated Samsung products",
+            "features": [
+                "Connect all your smart home appliances and devices into one simple-to-use app for a more efficient home."
+            ],
+            "images": [
+                "../../public/product1.jpg",
+                "../../public/product2.jpg",
+                "../../public/product3.jpg",
+                "../../public/product4.jpg" 
+            ]
+        },
+        {
+            "title": "Fridge",
+            "subtitle": "615 L Convertible 5in1 Side by Side Refrigerator RS7HCG8543B1",
+            "features": [
+                "Ergonomic handle",
+                "Dual Door",
+                "Carbon fiber finish",
+                "Lightweight frame"
+            ],
+            "images": [
+                "../../public/Fridge1.jpg",
+                "../../public/Fridge2.jpg",
+                "../../public/Fridge3.jpg",
+                "../../public/Fridge4.jpg",
+                "../../public/Fridge5.jpg"
+            ]
+        },
+        {
+            "title": "Hood",
+            "subtitle": "Hood with Washable Aluminum Filter, LED Lights, Touch Control",
+            "features": [
+                "Ergonomic handle",
+                "Dual Door",
+                "Carbon fiber finish",
+                "Lightweight frame"
+            ],
+            "images": [
+                "../../public/Hood1.jpg",
+                "../../public/Hood2.jpg",
+                "../../public/Hood3.jpg"
+            ]
+        },
+        {
+            "title": "Jet Bot AI",
+            "subtitle": "Bespoke Jet Bot Combo™ AI Robot Vacuum and Mop with All-in-One Clean Station® with Auto Steam",
+            "features": [
+                "Ergonomic handle",
+                "Dual Door",
+                "Carbon fiber finish",
+                "Lightweight frame"
+            ],
+            "images": [
+                "../../public/Vaccumbot1.jpg",
+                "../../public/Vaccumbot2.jpg",
+                "../../public/Vaccumbot3.jpg"
+            ]
+        },
+        {
+            "title": "Microwave Oven",
+            "subtitle": "28L Moisture Sensor, Convection Microwave Oven, MC28A5145VK",
+            "features": [
+                "Ergonomic handle",
+                "Dual Door",
+                "Carbon fiber finish",
+                "Lightweight frame"
+            ],
+            "images": [
+                "../../public/Oven1.jpg",
+                "../../public/Oven2.jpg",
+                "../../public/Oven3.jpg"
+            ]
+        },
+        {
+            "title": "Washing Machine",
+            "subtitle": "9.0 kg Front Load Washing Machine with AI Ecobubble & Hygiene Steam, WW90DG5U24AX",
+            "features": [
+                "Ergonomic handle",
+                "Dual Door",
+                "Carbon fiber finish",
+                "Lightweight frame"
+            ],
+            "images": [
+                "../../public/Wash1.jpg",
+                "../../public/Wash2.jpg",
+                "../../public/Wash3.jpg"
+            ]
+        }
+    ]
+}
