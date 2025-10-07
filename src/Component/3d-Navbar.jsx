@@ -21,11 +21,11 @@ const navItems = [
 ];
 
 export default function ThreeDNavbar({ onSelect }) {
-  const [active, setActive] = useState(null);
+  const [active, setActive] = useState("Kitchen View");
 
   const handleClick = (item) => {
     setActive(item.label);
-    if (onSelect) onSelect(item.animation); // Pass animation name to parent
+    if (onSelect) onSelect(item.animation); 
   };
 
   return (

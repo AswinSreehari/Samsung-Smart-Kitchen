@@ -81,7 +81,7 @@ export default function SmartAppliances() {
       <Link
       to= "/3d-explore"
       className="mt-12 flex items-center gap-2 px-7 py-3 rounded-full bg-green-500 text-white font-semibold text-lg shadow hover:bg-green-600 transition-all">
-        <svg width="22" height="22" fill="none" className="mr-1">
+        {/* <svg width="22" height="22" fill="none" className="mr-1">
           <rect x="2" y="6" width="18" height="11" rx="2" fill="#fff" />
           <rect
             x="2"
@@ -99,7 +99,7 @@ export default function SmartAppliances() {
             strokeLinecap="round"
             strokeLinejoin="round"
           />
-        </svg>
+        </svg> */}
         Explore 3D Kitchen
       </Link>
     </div>
