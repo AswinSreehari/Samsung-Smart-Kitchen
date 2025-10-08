@@ -10,7 +10,7 @@ export default function SmartAppliances() {
     <div className="flex flex-col items-center justify-center h-100vh min-h-screen bg-white pb-16">
       {/* Heading */}
       <h2 className="text-2xl md:text-3xl font-bold mb-12 text-center">
-        Samsung Smart Appliances
+        Smart Appliances
       </h2>
 
       {/* Appliance cards */}
