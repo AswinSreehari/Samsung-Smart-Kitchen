@@ -10,12 +10,13 @@ import * as THREE from 'three'
 // Responsive camera positions
 const getCameraPositions = (isSmall, isMedium) => ({
   'Idle': isSmall ? [10, 3, 16] : isMedium ? [9, 2.5, 13] : [8, 2, 12],
-  'Fridge': isSmall ? [7, 2.5, 4.5] : isMedium ? [6, 2.5, 3] : [6, 2.5, 2],
+  'Fridge': isSmall ? [7, 2.5, 1.5] : isMedium ? [6, 2.5, 1.2] : [6, 2.5, 0.9],
   'Chimney': isSmall ? [4, 1, 5] : isMedium ? [4, 1, 4] : [4, 0, 3],
   'StoveOven': isSmall ? [6, 2, 4.5] : isMedium ? [6, 2, 3.5] : [6, 2, 3],
   'WashM': isSmall ? [-2, 2, 6] : isMedium ? [-2, 2, 5] : [-2, 2, 4],
   'Vaccum': isSmall ? [8, 2, 16] : isMedium ? [8, 2, 13] : [8, 2, 12]
 });
+
 
 // Hook to detect device size
 function useResponsive() {

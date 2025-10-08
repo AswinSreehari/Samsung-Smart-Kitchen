@@ -5,12 +5,12 @@ const ApplianceModal = ({ data, onClose }) => {
   if (!data) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-start justify-center sm:justify-start bg-transparent pointer-events-none">
-      {/* Responsive container: width, position, and spacing */}
+    <div className="fixed inset-0 z-50 flex items-start justify-center sm:items-end sm:justify-start bg-transparent pointer-events-none">
       <div
         className={`
           absolute
-          left-1/2 sm:left-[100px] top-7 sm:top-[90px] 
+          left-1/2 sm:left-[100px] bottom-auto top-7
+          sm:top-auto sm:bottom-[56px]
           transform -translate-x-1/2 sm:translate-x-0
           w-[96vw] max-w-[390px] sm:w-[390px]
           min-h-[180px] sm:min-h-[180px]  
@@ -18,8 +18,7 @@ const ApplianceModal = ({ data, onClose }) => {
           shadow-[0_6px_24px_4px_rgba(0,0,0,0.08)]
           pointer-events-auto
           backdrop-blur-md
-          rounded-lg
-          sm:rounded-xl
+          rounded-lg sm:rounded-xl
         `}
       >
         {/* Title + Close */}
