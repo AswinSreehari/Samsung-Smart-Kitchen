@@ -7,15 +7,21 @@ import applianceData from '../Data/Appliances.json'
 import { OrbitControls } from '@react-three/drei'
 import * as THREE from 'three'
 
-// Responsive camera positions
+
+// Responsive camera positions (Fridge values adjusted as per feedback)
 const getCameraPositions = (isSmall, isMedium) => ({
   'Idle': isSmall ? [10, 3, 16] : isMedium ? [9, 2.5, 13] : [6, 2, 9],
-  'Fridge': isSmall ? [3.5, 2, 2] : isMedium ? [3.5, 2, 1.5] : [3.5, 2, 1],
+
+
+ 'Fridge': isSmall ? [7, 2, 7.5] : isMedium ? [6.5, 2.2, 7] : [11, 2, 3.5],
+
+
   'Chimney': isSmall ? [4, 1, 5] : isMedium ? [4, 1, 4] : [4, 0, 3],
   'StoveOven': isSmall ? [6, 2, 4.5] : isMedium ? [6, 2, 3.5] : [6, 2, 3],
   'WashM': isSmall ? [-2, 2, 6] : isMedium ? [-2, 2, 5] : [-2, 2, 4],
   'Vaccum': isSmall ? [8, 1.5, 4.5] : isMedium ? [8, 1.7, 4] : [-4, 3, 2],
 });
+
 
 // Hook to detect device size
 function useResponsive() {
@@ -31,6 +37,7 @@ function useResponsive() {
     isMedium: w < 1024 && w >= 700
   };
 }
+
 
 // Camera controller
 function CameraZoomController({ selectedKey, cameraPositions }) {
@@ -48,6 +55,7 @@ function CameraZoomController({ selectedKey, cameraPositions }) {
   })
   return null
 }
+
 
 const ThreeDScene = () => {
   const { isSmall, isMedium } = useResponsive()
@@ -82,8 +90,7 @@ const ThreeDScene = () => {
     ? selectedAnimation[0]
     : selectedAnimation || 'Idle'
 
-  // Tailwind widths for responsive canvas
-  const canvasClassName = isSmall
+   const canvasClassName = isSmall
     ? "w-full h-[56vw] min-h-[350px] max-h-[75vh]"  // smaller height on phones
     : isMedium
       ? "w-full h-[60vw] min-h-[400px] max-h-[80vh]"
