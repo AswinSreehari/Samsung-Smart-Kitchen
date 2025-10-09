@@ -21,21 +21,21 @@ export default function ThreeDNavbar({ onSelect }) {
 
   return (
     <div className="relative w-full bg-white border-b border-gray-200">
-      <Link to="/" className="absolute left-3 top-3 sm:left-4 sm:top-5 z-10">
-        <span className="bg-gray-700 text-white rounded-full shadow flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12">
-          <MdHome size={24} className="sm:size-7" />
+      <Link to="/" className="absolute left-2 top-2 sm:left-3 sm:top-3 z-10">
+        <span className="bg-gray-700 text-white rounded-full shadow flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10">
+          <MdHome size={18} className="sm:w-6 sm:h-6" />
         </span>
       </Link>
-      <div className="flex flex-col items-center pt-4 pb-2 sm:pt-6 sm:pb-4">
-        <h2 className="font-bold text-base sm:text-2xl mt-2 sm:mt-0 mb-2 sm:mb-6 text-center">
+      <div className="flex flex-col items-center pt-2 pb-1 sm:pt-3 sm:pb-2">
+        <h2 className="font-bold text-xs sm:text-lg mt-1 sm:mt-0 mb-1 sm:mb-3 text-center">
           Experience Samsung Kitchen
         </h2>
-        <nav className="flex flex-col gap-3 sm:flex-row sm:gap-8 w-full justify-center items-center">
+        <nav className="flex flex-col gap-2 sm:flex-row sm:gap-5 w-full justify-center items-center">
           {navItems.map((item) => (
             <button
               key={item.label}
               onClick={() => handleClick(item)}
-              className={`text-sm sm:text-lg font-semibold px-2 pb-1 sm:pb-1 cursor-pointer transition ${
+              className={`text-xs sm:text-base font-semibold px-2 pb-1 cursor-pointer transition ${
                 active === item.label
                   ? "text-black underline underline-offset-4 decoration-2"
                   : "text-gray-700 hover:text-black"

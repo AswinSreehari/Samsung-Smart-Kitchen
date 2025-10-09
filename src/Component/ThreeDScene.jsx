@@ -9,14 +9,13 @@ import * as THREE from 'three'
 
 // Responsive camera positions
 const getCameraPositions = (isSmall, isMedium) => ({
-  'Idle': isSmall ? [10, 3, 16] : isMedium ? [9, 2.5, 13] : [8, 2, 12],
-  'Fridge': isSmall ? [7, 2.5, 1.5] : isMedium ? [6, 2.5, 1.2] : [6, 2.5, 0.9],
+  'Idle': isSmall ? [10, 3, 16] : isMedium ? [9, 2.5, 13] : [6, 2, 9],
+  'Fridge': isSmall ? [3.5, 2, 2] : isMedium ? [3.5, 2, 1.5] : [3.5, 2, 1],
   'Chimney': isSmall ? [4, 1, 5] : isMedium ? [4, 1, 4] : [4, 0, 3],
   'StoveOven': isSmall ? [6, 2, 4.5] : isMedium ? [6, 2, 3.5] : [6, 2, 3],
   'WashM': isSmall ? [-2, 2, 6] : isMedium ? [-2, 2, 5] : [-2, 2, 4],
-  'Vaccum': isSmall ? [8, 2, 16] : isMedium ? [8, 2, 13] : [8, 2, 12]
+  'Vaccum': isSmall ? [8, 1.5, 4.5] : isMedium ? [8, 1.7, 4] : [-4, 3, 2],
 });
-
 
 // Hook to detect device size
 function useResponsive() {
@@ -87,8 +86,8 @@ const ThreeDScene = () => {
   const canvasClassName = isSmall
     ? "w-full h-[56vw] min-h-[350px] max-h-[75vh]"  // smaller height on phones
     : isMedium
-    ? "w-full h-[60vw] min-h-[400px] max-h-[80vh]"
-    : "w-full h-[80vh] min-h-[500px] max-h-[85vh]"
+      ? "w-full h-[60vw] min-h-[400px] max-h-[80vh]"
+      : "w-full h-[80vh] min-h-[500px] max-h-[85vh]"
 
   return (
     <div className={isSmall ? "pt-2" : "pt-8"}>
@@ -118,7 +117,7 @@ const ThreeDScene = () => {
         <ApplianceModal
           data={selectedAppliance}
           onClose={() => setSelectedAppliance(null)}
-          // Pass in isSmall or isMedium for responsive modal styling if needed
+        // Pass in isSmall or isMedium for responsive modal styling if needed
         />
       }
     </div>
